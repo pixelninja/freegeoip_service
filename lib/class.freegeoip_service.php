@@ -29,10 +29,10 @@ Class freegeoip_service_request {
             return null;
             //YOU SHALL NOT PASS!
         }
-
         /**
          * Convert the JSON into XML, and remove the top level node.
          */
+
         $data = JSON::convertToXML($data, false);
         $data = preg_replace('/<\\/?data(\\s+.*?>|>)/', '', $data);
 
